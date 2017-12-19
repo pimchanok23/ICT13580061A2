@@ -1,0 +1,97 @@
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ICT13580061A2.ProductNewPage">
+ 
+       <Grid>
+        <Image
+            Source="1.jpg"
+            Aspect="Fill"/>
+        
+        <ScrollView>
+
+    <StackLayout
+        Orientation="Vertical"
+        Margin="20">
+            
+        <Label
+            x:Name="titleLable"
+            Text="เพิ่มออเดอร์ใหม่"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            FontAttributes="Bold"
+            Margin="10" />
+        <Label
+            Text="รายการอาหาร"
+            TextColor="Green"
+            FontSize="14">
+        </Label>
+        <Entry
+            x:Name="nameEntry"
+            Placeholder="ชื่ออาหาร"
+            BackgroundColor="White" />
+        <Label
+            Text="รายละเอียด"
+            TextColor="Green"
+            FontSize="14"/>
+
+        <Editor
+            x:Name="descriptionEditor"
+            HeightRequest="100" />
+                
+        <Label
+            Text="ประเภทอาหาร"
+            TextColor="Green"
+            FontSize="14"/>
+     
+        <Picker
+            x:Name="categoryPicker"
+            Title="เลือกประเภทอาหาร"
+            BackgroundColor="White" />
+                
+        <Label
+            Text="ราคาอาหาร"
+            TextColor="Green"
+            FontSize="14"/>
+                
+        <Entry
+            x:Name="productPriceEntry"
+            Placeholder="ราคาอาหาร"
+            BackgroundColor="White" />
+        <Label
+            Text="ราคาขาย"
+            TextColor="Green"
+            FontSize="14"/>
+                
+        <Entry
+            x:Name="sellPriceEntry"
+            Placeholder="ราคาขาย"
+            BackgroundColor="White"
+            Keyboard="Numeric" />
+                
+        <Label
+            Text="รวมรายการอาหาร"
+            TextColor="Green"
+            FontSize="14"/>
+                
+        <Entry
+            x:Name="stockEntry"
+            Placeholder="รายการอาหารทั้งหมด"
+            BackgroundColor="White"
+            Keyboard="Numeric" />
+                
+        <Button
+            x:Name="saveButton"
+            Text="บันทึก"
+            BackgroundColor="Navy"/>
+                
+        <Button
+            x:Name="cancelButton"
+            Text="ยกเลิก"
+            BackgroundColor="Maroon" />
+                
+    </StackLayout>
+    </ScrollView>
+    </Grid>
+
+</ContentPage>
